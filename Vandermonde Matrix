@@ -1,0 +1,28 @@
+import numpy as np
+
+def main():
+    # Enter length of an array
+    length = int(input("Size of an array:")) 
+    
+    # Define and enter array
+    newarray = []
+    for i in range(length):
+        x = int(input("The elements of an array"))
+        newarray.append(x)
+        
+    print("The input array is:", newarray)
+    
+    #Enter the number of columns
+    col = int(input("The number of columns is"))
+    
+    #Enter whether increasing or not
+    increasing = bool(input("Enter the whether increasing or not"))
+    
+    print(np.vander(newarray, col,increasing))
+    pass
+    
+if __name__=="__main__":
+    main()
+    pass
+    
+
